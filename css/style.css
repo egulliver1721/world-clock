@@ -48,15 +48,12 @@ h2 {
 
 .time small {
   font-size: 20px;
+  vertical-align: middle;
 }
 
 .date {
   opacity: 0.7;
   text-align: center;
-}
-
-cities.allCities {
-  text-align: left;
 }
 
 footer {
