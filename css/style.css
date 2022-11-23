@@ -1,3 +1,61 @@
 body {
-  background: lightcoral;
+  background: linear-gradient(120deg, #fdfbfb 0%, #f0f1f1 100%);
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  background: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.select-city {
+  width: 80%;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 28px;
+  text-align: left;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+  padding: 20px 30px;
+  line-height: 30px;
+  border-bottom: 1px dotted rgba(128, 128, 128, 0.393);
+}
+
+.city:last-child {
+  border-bottom: none;
+}
+
+.time {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.time small {
+  font-size: 20px;
+}
+
+.date {
+  opacity: 0.7;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
 }
