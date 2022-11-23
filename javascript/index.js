@@ -38,4 +38,27 @@ function updateTime() {
   setInterval(updateLondonTime, 1000);
 }
 
-updateTime();
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  console.log(cityTimeZone);
+  let cityName = cityTimeZone.split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  console.log(cityTime.format("MMMM Do YYYY"));
+  console.log(cityTime.format("h:mm:ss [<small>]A[</small>]"));
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = `
+  <div class="city">
+          <div class="city-name">
+            <h2>${cityName}</h2>
+            <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+          </div>
+          <div class="time">${cityTime.format(
+            "h:mm:ss"
+          )}<small>${cityTime.format("A")}</small>            
+            </div>
+        </div>`;
+}
+
+let citiesSelectElement = document.querySelector("#city");
+
+citiesSelectElement.addEventListener("change", updateCity);
