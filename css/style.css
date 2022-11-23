@@ -55,6 +55,10 @@ h2 {
   text-align: center;
 }
 
+cities.allCities {
+  text-align: left;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;

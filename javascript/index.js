@@ -64,7 +64,11 @@ function updateCity(event) {
             "h:mm:ss"
           )} <small>   ${cityTime.format("A")}</small>            
             </div>
-        </div>`;
+          
+             
+        </div>
+        <a href="https://willowy-halva-1bcb0d.netlify.app/" class="allCities">All cities</a>
+        `;
 }
 
 let citiesSelectElement = document.querySelector("#city");
